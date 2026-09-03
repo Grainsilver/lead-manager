@@ -124,3 +124,11 @@ curl -X POST http://localhost:5000/leads \
 - Status values are stored without spaces (e.g. `ProposalSent`) as valid enum identifiers, and mapped to display labels (e.g. "Proposal Sent") in the UI.
 - The email field has a unique constraint; attempting to add a duplicate returns a `409 Conflict` with a descriptive message.
 - The Prisma client is generated into `backend/src/generated/` and is not committed — run `npx prisma generate` after installing.
+
+
+## Live Demo
+
+- **Frontend:** https://lead-manager-nu.vercel.app
+- **API:** https://lead-manager-29il.onrender.com
+
+> **Note:** The backend is hosted on Render's free tier, which spins down after inactivity. The first request after an idle period may take 30–60 seconds to respond while the service wakes up. Subsequent requests are fast.
