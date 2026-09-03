@@ -22,3 +22,6 @@ Thumbs.db
 # misc
 *.pem
 .vercel
+
+# prisma generated client
+**/generated/
