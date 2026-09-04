@@ -23,8 +23,8 @@ export default function LeadList({ leads }: LeadListProps) {
   }
 
   return (
-    <div className="bg-white rounded-lg shadow overflow-hidden">
-      <table className="w-full text-left">
+        <div className="bg-white rounded-lg shadow overflow-x-auto">
+      <table className="w-full text-left min-w-[560px]">
         <thead className="bg-gray-50 border-b border-gray-200">
           <tr>
             <th className="px-6 py-3 text-sm font-semibold text-gray-700">
